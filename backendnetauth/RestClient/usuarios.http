@@ -1,0 +1,32 @@
+GET http://localhost:3000/api/usuarios
+
+###
+
+GET http://localhost:3000/api/usuarios/antonio@uv.mx
+
+###
+
+POST http://localhost:3000/api/usuarios
+Content-Type: application/json
+
+{
+    "email": "prueba@.uv.mx",
+    "password": "123456",
+    "nombre": "Nuevo usuario manzano",
+    "rol": "Administrador"
+}
+
+###
+
+PUT http://localhost:3000/api/usuarios/prueba@uv.mx
+Content-Type: application/json
+
+{
+    "email": "prueba@.uv.mx",
+    "nombre": "Usuario manzano editado",
+    "rol": "Usuario"
+}
+
+### 
+
+DELETE http://localhost:3000/api/usuarios/prueba@uv.mx
